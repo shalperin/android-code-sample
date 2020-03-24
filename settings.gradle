@@ -1,0 +1,2 @@
+include ':meditationchallenge', ':library'
+rootProject.name='Redwood'

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="met-today" serif:id="met today">
+        <g id="met-today-bg" serif:id="met today bg" transform="matrix(1.3378,0,0,1.74126,-131.105,-75.6154)">
+            <ellipse cx="284.5" cy="187" rx="186.5" ry="143"/>
+        </g>
+        <g transform="matrix(-0.566514,0.843254,-0.858203,-0.576558,639.674,241.972)">
+            <rect x="43" y="260" width="273" height="41" style="fill:rgb(227,247,255);"/>
+        </g>
+        <g transform="matrix(0.436095,0.292977,-0.560172,0.833813,253.318,38.8568)">
+            <rect x="43" y="260" width="273" height="41" style="fill:rgb(227,247,255);"/>
+        </g>
+    </g>
+</svg>

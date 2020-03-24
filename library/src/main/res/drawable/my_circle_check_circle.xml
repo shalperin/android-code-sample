@@ -1,0 +1,6 @@
+<vector android:height="25dp" android:viewportHeight="500"
+    android:viewportWidth="500" android:width="25dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/lastFourWeeksMetCircleColor" android:pathData="M-0.001,250a249,249.5 90,1 0,498.999 0a249,249.5 90,1 0,-498.999 0z"/>
+    <path android:fillColor="@color/lastFourWeeksCheckColor" android:pathData="M392.181,128.327l-154.658,230.208l-35.186,-23.639l154.658,-230.208z"/>
+    <path android:fillColor="@color/lastFourWeeksCheckColor" android:pathData="M126.425,268.246l119.054,79.983l-22.967,34.186l-119.054,-79.983z"/>
+</vector>

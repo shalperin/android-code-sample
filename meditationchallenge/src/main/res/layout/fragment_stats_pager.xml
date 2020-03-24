@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        card_view:cardElevation="@dimen/card_elevation"
+        card_view:cardCornerRadius="@dimen/card_corner_radius"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+
+            >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpPager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                >
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <!-- TODO this is not an optimal approach, the status text doesn't slide with the pager. -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|bottom"
+                android:gravity="center"
+                android:layout_marginBottom="28dp"
+                android:id="@+id/lastFourWeeksDecoration"
+                >
+                <TextView android:id="@+id/achievedDayCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NN"/>
+                <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" days • "/>
+                <TextView android:id="@+id/achievedAverage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NN"/>
+                <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" min avg"/>
+                <TextView android:id="@+id/gotMedalText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" • You got " android:visibility="gone"/>
+                <TextView android:id="@+id/onTrackMedalText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" • On track for " android:visibility="gone"/>
+                <ImageView android:id="@+id/medal"  android:layout_width="30dp" android:layout_height="30dp" android:visibility="gone" android:layout_marginLeft="-5dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <ImageView android:layout_width="10dp" android:layout_height="10dp" android:layout_margin="4dp" android:id="@+id/dot0" android:src="@drawable/viewpager_dot" android:tint="@color/color_error"/>
+        <ImageView android:layout_width="10dp" android:layout_height="10dp" android:layout_margin="4dp" android:id="@+id/dot1" android:src="@drawable/viewpager_dot" android:tint="@color/color_grey_1"/>
+        <ImageView android:layout_width="10dp" android:layout_height="10dp" android:layout_margin="4dp" android:id="@+id/dot2" android:src="@drawable/viewpager_dot" android:tint="@color/color_grey_1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

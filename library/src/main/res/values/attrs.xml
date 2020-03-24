@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BarChartView">
+        <attr name="barColor" format="color"/>
+        <attr name="gridLineColor" format="color"/>
+        <attr name="labelColor" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="gridLineStrokeSize" format="float" />
+        <attr name="barPadding" format="float"/>
+        <attr name="graphPadding" format="float" />
+        <attr name="labelPosition" format = "float"/>
+        <attr name="labelTextPosition" format = "float"/>
+        <attr name="labelTextSize" format="float"/>
+        <attr name="labelHeight" format= "float"/>
+        <attr name="labelWidth" format = "float"/>
+    </declare-styleable>
+
+    <declare-styleable name="DayView">
+        <attr name="metVector" format="reference"/>
+        <attr name="notMetVector" format="reference"/>
+        <attr name="notMetTodayVector" format="reference"/>
+        <attr name="futureVector" format="reference"/>
+        <attr name="metTodayVector" format="reference"/>
+    </declare-styleable>
+   
+</resources>

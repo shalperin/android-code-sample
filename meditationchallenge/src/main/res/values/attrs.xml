@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThumbnailDescriptionView">
+        <attr name="title" format="string"/>
+        <attr name="description" format="string"/>
+        <attr name="thumbnail" format="reference"/>
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+</resources>

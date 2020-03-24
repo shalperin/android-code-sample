@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_navigation"
+    app:startDestination="@id/meditationDemoFragment">
+
+    <fragment
+        android:id="@+id/indexFragment"
+        android:name="com.blauhaus.android.redwood.meditationchallenge.components.index.IndexFragment"
+        android:label="IndexFragment" >
+        <action
+            android:id="@+id/action_indexFragment_to_meditationDemoFragment"
+            app:destination="@id/meditationDemoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meditationDemoFragment"
+        android:name="com.blauhaus.android.redwood.meditationchallenge.components.meditationchallenge.MeditationChallengeFragment"
+        android:label="MeditationDemoFragment" />
+</navigation>

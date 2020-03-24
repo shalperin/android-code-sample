@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Calendar -->
+    <color name="lastFourWeeksMetCircleColor">#008577</color>
+    <color name="lastFourWeeksTextColor">#cccccc</color>
+    <color name="lastFourWeeksSkippedColor">#7C2747</color>
+    <color name="lastFourWeeksDisabledColor">#444444</color>
+    <color name="lastFourWeeksCheckColor">#ffffff</color>
+
+    <!-- Bar Chart -->
+    <color name="defaultBarColor">#008577</color>-->
+    <color name="defaultGridLineColor">#4B4B4B</color>
+    <color name="defaultLabelColor">#03A9F4</color>
+    <color name="defaultTextColor">#ffffff</color>
+
+    <!-- My Circle -->
+    <color name="color_red">#C70000</color>
+    <color name="avatar">#5993BE</color>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   BARCHART  -->
+    <style name="RedwoodBarChartViewDefault">
+        <item name="barColor">@color/defaultBarColor</item>
+        <item name="gridLineColor">@color/defaultGridLineColor</item>
+        <item name="labelColor">@color/defaultLabelColor</item>
+        <item name="textColor">@color/defaultTextColor</item>
+        <item name="gridLineStrokeSize">5</item>
+        <item name="barPadding">8</item>
+        <item name="graphPadding">100</item>
+        <item name="labelPosition">40</item>
+        <item name="labelTextPosition">12</item>
+        <item name="labelTextSize">30</item>
+        <item name="labelHeight">70</item>
+        <item name="labelWidth">225</item>
+    </style>
+    <style name="RedwoodBarChartView" parent="RedwoodBarChartViewDefault"/>
+
+    <!-- LAST FOUR WEEKS  -->
+    <style name="RedwoodDayViewDefault">
+        <item name="metVector">@drawable/ic_last4weeks_circle_met</item>
+        <item name="notMetVector">@drawable/ic_last4weeks_x_mark</item>
+        <item name="notMetTodayVector">@drawable/ic_last4weeks_stroked_circle</item>
+        <item name="futureVector">@drawable/ic_last4weeks_circle_future</item>
+        <item name="metTodayVector">@drawable/ic_last4weeks_check_circle</item>
+    </style>
+    <style name="RedwoodDayView" parent="RedwoodDayViewDefault"/>
+
+
+    <!-- MY CIRCLE -->
+    <!-- TODO There are a lot more attributes of the various subviews of view_my_check_circle
+          that could be styled.  Will add them here as needed." -->
+    <style name="MyCircleView_CheckCircleDefault">
+        <item name="android:background">@drawable/my_circle_check_circle</item>
+    </style>
+    <style name="MyCircleView_CheckCircle" parent="MyCircleView_CheckCircleDefault" />
+</resources>

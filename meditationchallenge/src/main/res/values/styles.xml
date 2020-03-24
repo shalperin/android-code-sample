@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Components-->
+    <style name="RedwoodDayView" parent="RedwoodDayViewDefault">
+        <item name="metVector">@drawable/custom_last4weeks_circle_met</item>
+        <item name="notMetVector">@drawable/custom_last4weeks_x_mark</item>
+        <item name="notMetTodayVector">@drawable/custom_last4weeks_stroked_circle</item>
+        <item name="futureVector">@drawable/custom_last4weeks_circle_future</item>
+        <item name="metTodayVector">@drawable/custom_last4weeks_check_circle</item>
+    </style>
+
+    <style name="RedwoodBarChartView">
+        <item name="barColor">@color/color_secondary</item>
+        <item name="textColor">@color/color_on_primary</item>
+        <item name="labelColor">@color/color_primary</item>
+        <item name="gridLineStrokeSize">5</item>
+        <item name="barPadding">8</item>
+        <item name="graphPadding">70</item>
+        <item name="labelPosition">30</item>
+        <item name="labelTextPosition">12</item>
+        <item name="labelTextSize">30</item>
+        <item name="labelHeight">70</item>
+        <item name="labelWidth">225</item>
+    </style>
+
+    <style name="MyCircleView_CheckCircle" parent="MyCircleView_CheckCircleDefault" >
+        <item name="android:background">@drawable/custom_my_circle_check_circle</item>
+    </style>
+
+
+    <!--Bottom Sheets-->
+    <style name="ThemeOverlay.MyTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MyTheme.BottomSheet.Modal</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal</item>
+        <item name="android:navigationBarColor">?colorSurface</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+    <style name="Widget.MyTheme.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceLargeComponent</item>
+    </style>
+
+    <!--Navigation Drawer-->
+    <style name="Widget.MyTheme.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemTextAppearance">?textAppearanceBody2</item>
+    </style>
+
+
+
+</resources>

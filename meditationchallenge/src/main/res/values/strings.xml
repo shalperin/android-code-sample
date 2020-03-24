@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Redwood</string>
+    <string name="my_circle_message">%s days • %s min avg</string>
+    <string name="you">You</string>
+</resources>
