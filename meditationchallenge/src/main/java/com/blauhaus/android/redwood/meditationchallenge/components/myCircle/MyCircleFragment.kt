@@ -14,16 +14,8 @@ import com.blauhaus.android.redwood.meditationchallenge.R
 import kotlinx.android.synthetic.main.fragment_my_circle.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class MyCircleFragment : Fragment() {
+class MyCircleFragment : Fragment(R.layout.fragment_my_circle) {
     val model by viewModel<MyCircleViewModel>()
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_circle, container, false)
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

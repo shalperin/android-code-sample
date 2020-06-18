@@ -10,23 +10,13 @@ import com.blauhaus.android.redwood.R
 import kotlinx.android.synthetic.main.fragment_last_four_weeks.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class LastFourWeeksFragment : Fragment() {
+class LastFourWeeksFragment : Fragment(R.layout.fragment_last_four_weeks) {
     private val model: LastFourWeeksViewModel by viewModel()
 
     lateinit var views: List<DayView>
 
     companion object {
         fun newInstance() = LastFourWeeksFragment()
-    }
-
-
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        var view = inflater.inflate(R.layout.fragment_last_four_weeks, container, false)
-        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

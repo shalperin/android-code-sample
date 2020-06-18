@@ -17,7 +17,7 @@ const val PROP_GRID_LINE_COLOR = "gridLineColor"
 const val PROP_LABEL_COLOR = "labelColor"
 const val PROP_TEXT_COLOR = "textColor"
 
-class BarChartFragment : Fragment(), BarChartViewListener {
+class BarChartFragment : Fragment(R.layout.fragment_bar_chart), BarChartViewListener {
     private val model: BarChartViewModel by viewModel()
     private lateinit var id: String
 
@@ -38,13 +38,6 @@ class BarChartFragment : Fragment(), BarChartViewListener {
                 id = it.getString(ARG_ID)!!
             }
         }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_bar_chart, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

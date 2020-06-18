@@ -13,17 +13,9 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 //TODO Refactor: Do I want to rename this App fragment?
-class MeditationChallengeFragment : Fragment() {
+class MeditationChallengeFragment : Fragment(R.layout.fragment_meditation_challenge) {
 
     private val viewModel by viewModel<MeditationChallengeViewModel>()
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_meditation_challenge, container, false)
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

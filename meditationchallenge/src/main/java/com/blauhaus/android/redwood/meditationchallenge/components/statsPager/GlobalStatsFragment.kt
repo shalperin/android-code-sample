@@ -14,16 +14,8 @@ import java.text.NumberFormat
 import java.util.*
 
 
-class GlobalStatsFragment : Fragment() {
+class GlobalStatsFragment : Fragment(R.layout.fragment_global_stats) {
     val model by viewModel<StatsViewModel>()
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_global_stats, container, false)
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
